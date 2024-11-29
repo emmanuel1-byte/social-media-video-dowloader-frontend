@@ -1,0 +1,150 @@
+/* Root variables */
+:root {
+    --background-color: #1e1e2f;
+    --text-color: #fff;
+    --accent-color: #7d5fff;
+    --button-hover: #5a3bff;
+    --font-family: 'Arial', sans-serif;
+  }
+  
+  /* General Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  header.header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    background-color: #2e2e42;
+    color: var(--text-color);
+  }
+  
+  .form button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .loading .spinner {
+    border: 5px solid #ccc;
+    border-top: 5px solid var(--accent-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loading p {
+    margin-top: 10px;
+    color: var(--text-color);
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .result h2 {
+    margin-bottom: 10px;
+    color: var(--accent-color);
+  }
+  
+  .result .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(90deg, #7d5fff, #5a3bff);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .result .btn:hover {
+    background: linear-gradient(90deg, #5a3bff, #7d5fff);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+  }
+  
+  .result .btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Animations */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  

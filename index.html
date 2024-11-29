@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Video Downloader</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Video Downloader</h1>
+      <p>Enter a video URL and download it instantly!</p>
+    </header>
+
+    <main class="container">
+      <form id="videoForm" class="form">
+        <input
+          type="url"
+          id="videoUrl"
+          placeholder="Paste video URL here..."
+          required
+        />
+        <button type="submit">Download Video</button>
+      </form>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Processing your video...</p>
+      </div>
+
+      <div id="result" class="result hidden">
+        <h2>Download Complete</h2>
+        <button id="downloadButton" class="btn">Download to Device</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Built with ❤️ for social media video downloads</p>
+    </footer>
+  </body>
+</html>
